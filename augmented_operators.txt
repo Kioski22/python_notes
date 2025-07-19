@@ -1,0 +1,12 @@
+
+take note that this augmented Operator automatically stores  the outcome of the operation
+on the variable
+
+
+| Operator | Long Way    | Shortcut | Meaning                 |
+| -------- | ----------- | -------- | ----------------------- |
+| `+=`     | `x = x + 1` | `x += 1` | Add (increment)         |
+| `-=`     | `x = x - 1` | `x -= 1` | Subtract (decrement)    |
+| `*=`     | `x = x * 2` | `x *= 2` | Multiply                |
+| `/=`     | `x = x / 2` | `x /= 2` | Divide                  |
+| `%=`     | `x = x % 3` | `x %= 3` | Modulo (remainder only) |
