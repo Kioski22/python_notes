@@ -1,0 +1,32 @@
+-------------------range() Function------------------------
+range() gives you a sequence of numbers to use in a loop.
+
+Common Forms:
+range(5) → 0, 1, 2, 3, 4
+
+range(2, 6) → 2, 3, 4, 5
+
+range(1, 10, 2) → 1, 3, 5, 7, 9 (step of 2)
+
+⚙️ General Format:
+
+range(start, stop, step)
+start = where it begins (default is 0)
+
+stop = where it ends (but does NOT include it!)
+
+step = how much to increase each time (default is 1)
+
+
+
+--------------------My question --------------
+
+in this the range (2 , 6) meaning printing the numbers inside the 2 and 6  why  it doesnt end with  6 ?
+  
+
+in the second range (1, 10 ,2) i understand that the composition of that range is start , finish , skip by 
+
+but what happens if i put range(1 , 10 , 2, 20)  ? will it skip ? add? multiply throw an error?
+
+
+-----------------------source provided-----------------------------
