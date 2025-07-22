@@ -1,9 +1,7 @@
 ✔️ In enumerate(num_list):
 When you write:
 
-python
-Copy
-Edit
+
 for index, value in enumerate(num_list):
 You are unpacking the tuple (index, value) — that's called tuple unpacking.
 
@@ -12,9 +10,6 @@ Yes, you also unpack key-value pairs when looping over a dictionary.
 
 For example:
 
-python
-Copy
-Edit
 for key, value in my_dict.items():
 Here, .items() returns pairs like ("name", "Randy"), and you're unpacking the tuple (key, value).
 

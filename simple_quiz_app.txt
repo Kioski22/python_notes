@@ -1,0 +1,80 @@
+                    -----this file explains the struggle and learnings i've learned and encounter during the development------
+                     -----of the mini project i built   with the concise instructions from chatgpt no code snippets. -----
+
+
+
+============================================================  they're as follow ===================================================================
+
+
+
+--- 1st  i learned  data structure / structuring data into a clean manner (list , dict , tuple)
+
+this is how i do it before 
+
+dict_variable = {"" : "", "" : "" , "" : "", "" : "","" : ""}
+list_variable = ["","","","","","","","","",""]
+tuple_variable = ("","","","","","","","","","")
+
+chat sees that this type of handling the variables is messy and ugly.
+
+
+in the project chatgpt thought me to store  the dictionary of the question , choices and answer inside the list or the quiz variable.
+
+like this :
+
+some_variable = [ 
+    {
+        "key" : "value",
+        "key" : {
+            "key" : "value",
+            "key" : "value",
+            "key" : "value",
+            "key" : "value"
+        },
+        "key" : "value"
+    }
+]
+
+in this way it is clean to look and organized.
+*** for me not to be confused in what my data structure is abouut and how it is handled within the program i use pythontutor visualizer. ***
+
+
+
+
+
+
+
+2nd is  how do i connect  a function to another function which puzzles me before. 
+
+example 
+
+para1 = 1
+para2 = 2
+para3 = 
+
+def a_function( para1 , para2 ):
+    if para1 != para2:
+        para3 += add_them(para1 , para2)
+def add_them(para1, para2):
+     return para1 + para2
+
+a_function(para1, para2)
+
+in this the function a_function uses the para1 and para2 variables as parameter 
+the if statement checks if para1 is not equal to para2  which contains a hardcoded data in them 
+found that it is true  para3 calls out the add_them function for its  return value
+
+then add_them funtion returns the value  to para3 which para 3 stores for future uses
+
+
+
+💬 Reflection
+This project helped me:
+
+Break my fear of combining data and logic
+
+Understand how code is structured in a readable, clean way
+
+Think like a developer, not just a coder
+
+Be more confident with Python basics
