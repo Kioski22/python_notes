@@ -1,0 +1,129 @@
+ list is initialized using this 
+
+ " [] "
+
+ to use it  : 
+
+ var1 = [1, 2, 3, 4, 5 ]
+
+ printing it have so many ways 
+
+ print(var1[2]) # this will print 3
+
+to print the list without the square bracket
+
+print(*var1) # this will print 1 2 3 4 5 or the entire list
+print (var1, sep = " ") #  this will print  the list [1, 2, 3, 4, 5] # sep is the separator not variable 
+ 
+
+
+in your list you could have an string, integer , boolean ,float
+
+var2 = [ "Hello", 1, True, 22.0] # note that the type doesnt really matter its going to be stored in the same way 
+
+
+-----------------------REMINDER-------------------------------------------------------------
+
+List are based on an index 
+you can access the data stored in the list through their index 
+indexes starts at 0 
+--------------------------------------------------------------------------------------------
+
+
+you could also do nested list 
+
+
+var3 = [1,2,[3,4,5],6]
+
+
+
+the insert function  inserts a data to the specific list into a spefic index
+
+
+
+ var1 = [1, 2, 3, 4, 5 ]
+
+print(var1, sep = " ")     this will print the list   # Output: [1, 2, 3, 4, 5]
+var1.insert(len(var1),6)    this will update the list var1  by inserting the integer 6 next to the data count inside the var1 list
+                            Since len(var1) is the index after the last element, it behaves just like append() in this case.
+print(var1, sep = " ")     it will print the updated list # Output: [1, 2, 3, 4, 5, 6]
+
+append function 
+
+
+var1.append(6)  automatically inserts the data to the last part of the list and not specifying the index again
+print(var1, sep = " ") so it prints  # Output: [1, 2, 3, 4, 5, 6]
+
+
+and the extend function
+
+
+var1.extend([7,8,9,10]) this automatically extends the data at the very end of the list 
+print(var1)# Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+
+removing something from a list 
+
+var1 = [1, 2, 3, 4, 5]
+
+var1.pop(2)  # Removes the value 3 (at index 2)
+
+print(var1)  # Output: [1, 2, 4, 5]
+
+
+del var1[2]# Removes the value 3 (at index 2)
+print(var1)  # Output: [1, 2, 4, 5]
+
+
+
+
+| Method           | What it does                            | Returns value? |
+| ---------------- | --------------------------------------- | -------------- |
+| `del var1[i]`    | Deletes the element at index `i`        | ❌ No           |
+| `var1.pop(i)`    | Removes and returns the element at `i`  | ✅ Yes          |
+| `var1.remove(x)` | Removes the **first** occurrence of `x` | ❌ No           |
+
+
+
+To remove multiple items from a list in Python, you can use the following methods:
+
+Using a Loop: You can iterate through the items you want to remove and use the remove() method or pop() method.
+
+my_list = [1, 2, 3, 4, 5, 6]
+items_to_remove = [2, 4]
+
+for item in items_to_remove:
+    my_list.remove(item)
+
+print(my_list)  # Output: [1, 3, 5, 6]
+
+------------------------------------------------------------------------------------------------------------------
+
+Using List Comprehension: This method creates a new list that excludes the items you want to remove.
+
+my_list = [1, 2, 3, 4, 5, 6]
+items_to_remove = [2, 4]
+
+my_list = [item for item in my_list if item not in items_to_remove]
+
+print(my_list)  # Output: [1, 3, 5, 6]
+ 
+------------------------------------------------------------------------------------------------------------------------
+
+Using the filter() Function: Similar to list comprehension, but using the filter() function.
+
+my_list = [1, 2, 3, 4, 5, 6]
+items_to_remove = [2, 4]
+
+my_list = list(filter(lambda x: x not in items_to_remove, my_list))
+
+print(my_list)  # Output: [1, 3, 5, 6]
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+What would happen if you try to remove an item not in the list?
+
+If you try to remove an item that is not in the list using the remove() method, Python will raise a ValueError. This error indicates that the item you are trying to remove does not exist in the list.
