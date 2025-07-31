@@ -1,0 +1,31 @@
+------------------------------------------------------------------------------------------
+
+                     tuples are initialized in two ways 
+
+my_tuple = ( 1, 2,"yes", True, 9.8 ) #this is a tuple *most preffered method of tuples
+my_tuple =  1, 2,"yes", True, 9.8  # this is also a tuple
+
+
+tuples data are immutable  
+-Tuples are immutable. Once you create a tuple, you cannot change its elements.
+If you try to assign a new value to an element in a tuple, you will get an error. 
+and you cant delete anything in a tuple 
+
+
+                       Access tuples through their index
+
+my_tuple =("this","is","a","tuple")
+
+my_tuple[4] = "sir!" # this adds the data to the index 4 of the tuple  
+# but remember tuples are immutable and does not item assignments 
+print(my_tuple)  
+
+my_tuple = ("this","is","a","tuple")
+
+for i in my_tuple: # this iterates over the the tuple and saves it into the i variable 
+    print(i) # this prints i variable
+
+
+
+
+
